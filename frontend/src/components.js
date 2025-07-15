@@ -495,7 +495,7 @@ export const ControlPanel = ({ theme, onSongSelect, onThemeChange, onToggleLyric
 // Main MiniLyrics Component
 export const MiniLyrics = () => {
   const [currentTheme, setCurrentTheme] = useState('classic');
-  const [selectedSong, setSelectedSong] = useState('Blinding Lights');
+  const [selectedSong, setSelectedSong] = useState('Sample Song 1');
   const [isLyricsVisible, setIsLyricsVisible] = useState(true);
   const [isSettingsVisible, setIsSettingsVisible] = useState(false);
   const [isPinned, setIsPinned] = useState(false);
