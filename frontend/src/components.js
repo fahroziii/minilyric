@@ -367,7 +367,7 @@ export const FloatingLyricsDisplay = ({ theme, lyrics, currentPosition, isVisibl
 
 // Main Control Panel
 export const ControlPanel = ({ theme, onSongSelect, onThemeChange, onToggleLyrics, onToggleSettings, isLyricsVisible, isSettingsVisible, opacity, onOpacityChange }) => {
-  const [selectedSong, setSelectedSong] = useState('Blinding Lights');
+  const [selectedSong, setSelectedSong] = useState('Sample Song 1');
   const [showSearch, setShowSearch] = useState(false);
 
   const handleSongSelect = (songKey) => {
