@@ -21,74 +21,71 @@ import {
   Download
 } from 'lucide-react';
 
-// Mock lyrics data for different songs
+// Mock lyrics data for demonstration
 const lyricsDatabase = {
-  "Blinding Lights": {
-    artist: "The Weeknd",
+  "Sample Song 1": {
+    artist: "Demo Artist",
     lyrics: [
-      { time: 0, text: "Yeah, I've been trying to call" },
-      { time: 3000, text: "I've been on my own for long enough" },
-      { time: 6000, text: "Maybe you can show me how to love, maybe" },
-      { time: 10000, text: "I feel like I'm just missing something when you're gone" },
-      { time: 15000, text: "Yeah, I've been trying to call" },
-      { time: 18000, text: "I've been on my own for long enough" },
-      { time: 21000, text: "Maybe you can show me how to love, maybe" },
-      { time: 25000, text: "I feel like I'm just missing something when you're gone" },
-      { time: 30000, text: "And I feel like I'm just missing something when you're gone" },
-      { time: 35000, text: "'Cause I wanna be in love" },
-      { time: 38000, text: "And I wanna taste her" },
-      { time: 41000, text: "And I wanna make her feel like she's mine" },
-      { time: 45000, text: "And I wanna be in love" },
-      { time: 48000, text: "And I wanna taste her" },
-      { time: 51000, text: "And I wanna make her feel like she's mine" },
-      { time: 55000, text: "I can't sleep until I feel your touch" },
-      { time: 60000, text: "I said, ooh, I'm blinded by the lights" },
-      { time: 65000, text: "No, I can't sleep until I feel your touch" },
-      { time: 70000, text: "I said, ooh, I'm blinded by the lights" },
-      { time: 75000, text: "No, I can't sleep until I feel your touch" }
+      { time: 0, text: "This is a sample lyric line" },
+      { time: 3000, text: "Demonstrating the floating display" },
+      { time: 6000, text: "With synchronized timing and scrolling" },
+      { time: 10000, text: "Just like the original MiniLyrics" },
+      { time: 15000, text: "You can change songs from the menu" },
+      { time: 18000, text: "And adjust themes and opacity" },
+      { time: 21000, text: "The window can be dragged around" },
+      { time: 25000, text: "And pinned to stay on top" },
+      { time: 30000, text: "Perfect for Spotify users" },
+      { time: 35000, text: "Who want floating lyrics display" },
+      { time: 38000, text: "With modern design and features" },
+      { time: 41000, text: "Built with React and Framer Motion" },
+      { time: 45000, text: "Responsive and customizable" },
+      { time: 48000, text: "Just like the classic MiniLyrics" },
+      { time: 51000, text: "But with modern web technology" },
+      { time: 55000, text: "And beautiful animations" },
+      { time: 60000, text: "Ready for Spotify integration" },
+      { time: 65000, text: "With real-time lyrics sync" },
+      { time: 70000, text: "Perfect replacement solution" },
+      { time: 75000, text: "For modern music lovers" }
     ]
   },
-  "Shape of You": {
-    artist: "Ed Sheeran",
+  "Sample Song 2": {
+    artist: "Another Demo Artist",
     lyrics: [
-      { time: 0, text: "The club isn't the best place to find a lover" },
-      { time: 4000, text: "So the bar is where I go" },
-      { time: 8000, text: "Me and my friends at the table doing shots" },
-      { time: 12000, text: "Drinking fast and then we talk slow" },
-      { time: 16000, text: "Come over and start up a conversation with just me" },
-      { time: 20000, text: "And trust me I'll give it a chance now" },
-      { time: 24000, text: "Take my hand, stop, put Van the Man on the jukebox" },
-      { time: 28000, text: "And then we start to dance, and now I'm singing like" },
-      { time: 32000, text: "Girl, you know I want your love" },
-      { time: 36000, text: "Your love was handmade for somebody like me" },
-      { time: 40000, text: "Come on now, follow my lead" },
-      { time: 44000, text: "I may be crazy, don't mind me" },
-      { time: 48000, text: "Say, boy, let's not talk too much" },
-      { time: 52000, text: "Grab on my waist and put that body on me" },
-      { time: 56000, text: "Come on now, follow my lead" },
-      { time: 60000, text: "Come, come on now, follow my lead" }
+      { time: 0, text: "Here's another sample track" },
+      { time: 4000, text: "To show different content" },
+      { time: 8000, text: "With different timing patterns" },
+      { time: 12000, text: "And various lyric structures" },
+      { time: 16000, text: "The application handles multiple songs" },
+      { time: 20000, text: "With smooth transitions between them" },
+      { time: 24000, text: "Search functionality works perfectly" },
+      { time: 28000, text: "And lyrics scroll automatically" },
+      { time: 32000, text: "With highlighted current lines" },
+      { time: 36000, text: "Beautiful color-coded display" },
+      { time: 40000, text: "Multiple themes to choose from" },
+      { time: 44000, text: "Classic, translucent, neon, minimal" },
+      { time: 48000, text: "Each with unique styling" },
+      { time: 52000, text: "Adjustable opacity settings" },
+      { time: 56000, text: "Pin and drag functionality" },
+      { time: 60000, text: "Perfect MiniLyrics replacement" }
     ]
   },
-  "Bad Guy": {
-    artist: "Billie Eilish",
+  "Sample Song 3": {
+    artist: "Third Demo Artist",
     lyrics: [
-      { time: 0, text: "White shirt now red, my bloody nose" },
-      { time: 4000, text: "Sleepin', you're on your tippy toes" },
-      { time: 8000, text: "Creepin' around like no one knows" },
-      { time: 12000, text: "Think you're so criminal" },
-      { time: 16000, text: "Bruises on both my knees for you" },
-      { time: 20000, text: "Don't say thank you or please" },
-      { time: 24000, text: "I do what I want when I'm wanting to" },
-      { time: 28000, text: "My soul? So cynical" },
-      { time: 32000, text: "So you're a tough guy" },
-      { time: 34000, text: "Like it really rough guy" },
-      { time: 36000, text: "Just can't get enough guy" },
-      { time: 38000, text: "Chest always so puffed guy" },
-      { time: 40000, text: "I'm that bad type" },
-      { time: 42000, text: "Make your mama sad type" },
-      { time: 44000, text: "Make your girlfriend mad tight" },
-      { time: 46000, text: "Might seduce your dad type" },
-      { time: 48000, text: "I'm the bad guy, duh" }
+      { time: 0, text: "Third demonstration track" },
+      { time: 4000, text: "Shows variety in content" },
+      { time: 8000, text: "Different lyric timing patterns" },
+      { time: 12000, text: "Smooth scrolling animations" },
+      { time: 16000, text: "Real-time highlight effects" },
+      { time: 20000, text: "Customizable appearance options" },
+      { time: 24000, text: "Draggable floating window" },
+      { time: 28000, text: "Always-on-top functionality" },
+      { time: 32000, text: "Modern web-based solution" },
+      { time: 36000, text: "Compatible with all browsers" },
+      { time: 40000, text: "Responsive design for all screens" },
+      { time: 44000, text: "Easy to use interface" },
+      { time: 48000, text: "Built for Spotify users" },
+      { time: 52000, text: "Perfect lyrics display solution" }
     ]
   }
 };
